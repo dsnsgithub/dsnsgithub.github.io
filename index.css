@@ -7,8 +7,9 @@ h1 {
 }
 
 
-#thinline {
-	border-bottom: 3px solid #666;
+.thinline {
+    border-bottom: 3px solid #666;
+    padding-bottom:30px;
 }
 
 /*? FLEXBOX STYLES ---------------------------------------------------------------*/
@@ -47,5 +48,6 @@ h1 {
 
 .project {
     border-radius: 6px;
-    padding: 30px;
+    padding: 25px;
+    font-size: 1.5vw;
 }
