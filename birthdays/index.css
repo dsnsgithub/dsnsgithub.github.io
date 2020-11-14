@@ -1,0 +1,23 @@
+/*? FLEXBOX STYLES ---------------------------------------------------------------*/
+
+.row {
+	display: flex;
+}
+
+.column {
+	text-align: center;
+	flex: 50%;
+	padding: 8px;
+}
+
+.bordersection {
+	border-right: 1px solid #FFF;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 3vw;
+}
