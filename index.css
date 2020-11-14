@@ -1,0 +1,51 @@
+* {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+
+#thinline {
+	border-bottom: 3px solid #666;
+}
+
+/*? FLEXBOX STYLES ---------------------------------------------------------------*/
+
+.row {
+    display: flex;
+}
+
+.column {
+	text-align: center;
+	flex: 50%;
+	padding: 8px;
+}
+
+.bordersection {
+	border-right: 1px solid #AAA;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.icon{
+    zoom:3;
+}
+
+.discordtag {
+    font-weight: bold;
+    padding:30px;
+    background-color:#5b606b;
+    border-radius: 4px;
+    font-size: 2vw;
+    margin:40px
+}
+
+.project {
+    border-radius: 6px;
+    padding: 30px;
+}

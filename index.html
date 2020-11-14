@@ -2,75 +2,102 @@
 <html lang="en">
 
 <head>
-
-    <style>
-        * {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        #demo {
-            margin-left: auto;
-            margin-right: auto;
-            width: 8em;
-            font-size: 9vw;
-            font-weight: bold;
-        }
-
-        h1 {
-            text-align: center;
-        }
-    </style>
-
-
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("December 12, 2020").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML =
-                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-
-
-    </script>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown until I get a Gaming PC</title>
+    <title>DSNS Bio</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/8b8f2eda4a.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="index.css">
 </head>
 
+
+
 <body>
-    <p id="demo"></p>
-    <h1>Until I Get A Gaming PC</h1>
-    <h1><a href="http://www.cyberpowerpc.com/saved/1N1D1B">Click here to view the specs!</a></h1>
+    <header>
+
+
+        <div class="row">
+            <div class="column bordersection">
+                <h1 id="thinline">Welcome to my bio!</h1>
+                <h1>Check out the projects I am working on</h1>
+
+
+                <div class="grid-container">
+
+                    <a href="https://dsnsgithub.github.io/birthdays">
+                        <button class="grid-item project" style="background-color:rgb(219, 183, 90);">
+                            Birthday Countdown
+                        </button>
+                    </a>
+
+
+                    <a href="https://dsnsgithub.github.io/gamingpc">
+                        <button class="grid-item project" style="background-color:darkgoldenrod;">
+                            Gaming PC Countdown
+                        </button>
+                    </a>
+
+                    <a href="https://dsnsgithub.github.io/christmas">
+                        <button class="grid-item project" style="background-color: rgb(211, 107, 107);">
+                            Christmas Countdown
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <h2>Socials</h2>
+
+
+                <div class="discordtag">
+                    Discord Tag: DSNS#1087
+                </div>
+
+                <div class="grid-container">
+
+                    <div class="grid-item icon">
+                        <a href="https://github.com/dsnsgithub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="grid-item icon">
+                        <a href="https://www.twitch.tv/dsnsosu"><i class="fab fa-twitch"></i></a>
+                    </div>
+                    <div class="grid-item icon">
+                        <a href="https://www.youtube.com/channel/UCvUkvYDaBdqFJA0THLPs0qQ"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="grid-item icon">
+                        <a href="https://www.reddit.com/user/Dominic_Mine"><i class="fab fa-reddit"></i></a>
+                    </div>
+                    <div class="grid-item icon">
+                        <a href="https://twitter.com/DSNSminecraft"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="grid-item icon">
+                        <a href="https://steamcommunity.com/profiles/76561198929623310"><i class="fab fa-steam"></i></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <main>
+
+    </main>
+
 </body>
 
 </html>
