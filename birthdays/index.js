@@ -1,3 +1,9 @@
+const round = (number, decimalPlaces) => {
+	const factorOfTen = Math.pow(10, decimalPlaces);
+	return Math.round(number * factorOfTen) / factorOfTen;
+};
+
+
 function countdown(birthday, name) {
     //Gets the EPOCH time for the birthday in milliseconds
 	var countDownDate = new Date(birthday).getTime();
@@ -32,7 +38,11 @@ function countdown(birthday, name) {
 		document.getElementById(name).innerHTML =
 			days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-		document.getElementById(name + "Bar").value = 31536000000 - distance;
+        document.getElementById(name + "Bar").value = 31536000000 - distance;
+        
+
+        document.getElementById(name + "percent").innerHTML =
+		    round(((31536000000 - distance) / 31536000000)*100,2) + "%";
 	}, 1000);
 }
 
