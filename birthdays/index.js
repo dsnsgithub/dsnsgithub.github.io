@@ -1,13 +1,24 @@
 function countdown(birthday, name) {
+    //Gets the EPOCH time for the birthday in milliseconds
 	var countDownDate = new Date(birthday).getTime();
 
-	// Update the count down every 1 second
+
 	var x = setInterval(function () {
-		// Get today's date and time
+
 		var now = new Date().getTime();
 
-		// Find the distance between now and the count down date
-		var distance = countDownDate - now;
+        var distance = countDownDate - now;
+
+        
+        while (distance < 0) {
+            birthdayArray = birthday.split(" ")
+
+            birthdayArray[2] = Number(birthdayArray[2]) + 1
+            birthday = birthdayArray.join(" ")
+
+            countDownDate = new Date(birthday).getTime();
+            distance = countDownDate - now;
+        }
 
 		// Time calculations for days, hours, minutes and seconds
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -15,21 +26,17 @@ function countdown(birthday, name) {
 			(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 		);
 		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
 
-		// Display the result in the element with id="demo"
 		document.getElementById(name).innerHTML =
 			days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-		// If the count down is finished, write some text
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById(name).innerHTML = "EXPIRED";
-		}
+		document.getElementById(name + "Bar").value = 31536000000 - distance;
 	}, 1000);
 }
 
-countdown("May 17 2021", "dsns");
+countdown("May 17, 2021", "dsns");
 countdown("Febuary 10 2021", "jiebi");
 countdown("October 30 2021", "retsed");
 countdown("May 3 2021", "idot777");

@@ -2,7 +2,7 @@
 
 .grid-container {
 	display: grid;
-	grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 * {
@@ -11,4 +11,7 @@
 
 p {
     font-size: 3vw;
+}
+.grid-item {
+    margin-top: 0;
 }
