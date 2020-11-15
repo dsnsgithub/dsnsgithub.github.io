@@ -43,11 +43,18 @@ h1 {
     background-color:#5b606b;
     border-radius: 4px;
     font-size: 2vw;
-    margin:40px
+    margin:40px;
+    box-shadow: 5px 15px 5px rgb(63, 62, 62);
+    color:white;
 }
 
 .project {
-    border-radius: 6px;
-    padding: 25px;
+    border-radius: 25px;
+    padding: 15px;
+    margin:10px;
     font-size: 1.5vw;
+}
+
+button:hover {
+    cursor: pointer;
 }
