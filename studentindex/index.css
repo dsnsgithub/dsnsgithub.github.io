@@ -16,6 +16,7 @@ form {
     border-radius: 4px;
     background-color: #BBB;
     padding: 10px;
+    display: inline-block;
 }
 
 
