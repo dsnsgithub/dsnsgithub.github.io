@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,22 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PPI Calculator" />
+    <meta property="og:description" content="Calculate the PPI of your display here! Just enter the height, width, and diagonal screen size of your monitor." />
+    <meta property="og:url" content="https://dsnsgithub.github.io/ppi" />
+    <meta property="og:image" content="../static/images/pfp.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
     <nav>
@@ -23,10 +37,10 @@
         <a id="backNav" href="https://dsnsgithub.github.io">Back</a>
     </nav>
 
-    
+
     <center>
 
-    
+
         <label for="height">Height:</label> <br>
         <input id="height" name="height" type="number">
 
@@ -42,26 +56,27 @@
 
         <br>
 
-       <button type="button" onclick="calculatePPI()">Calculate</button>
+        <button type="button" onclick="calculatePPI()">Calculate</button>
 
-       <br>
-       <br>
+        <br>
+        <br>
 
-    <h1>
-        PPI:
-         <p id="ppi"></p>
-    </h1>
-
-
+        <h1>
+            PPI:
+            <p id="ppi"></p>
+        </h1>
 
 
-    <h2>What is PPI?</h2>
 
-    <div class="explain">
-<p>PPI, also known as pixels per inch, is a calculation to determine how many pixels per one inch on your monitor there are.</p>
-<p>The higher the PPI, the sharper the image quality.</p>
-    </div>
-    
+
+        <h2>What is PPI?</h2>
+
+        <div class="explain">
+            <p>PPI, also known as pixels per inch, is a calculation to determine how many pixels per one inch on your monitor there are.</p>
+            <p>The higher the PPI, the sharper the image quality.</p>
+        </div>
+
     </center>
 </body>
+
 </html>
