@@ -6,7 +6,7 @@ usernames = [
 	"AmKale",
 	"LonelySouls",
 	"Node13",
-	"idiot777",
+	"idot7",
 	"valldant",
 	"Retsed",
 	"jlne",
