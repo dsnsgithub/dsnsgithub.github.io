@@ -1,6 +1,6 @@
-*{
-    padding:0;
-    margin:0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
 /*? ANIMATIONS ---------------------------------------------------------------*/
@@ -35,23 +35,21 @@
 	-ms-animation: fadeIn ease 2.5s;
 }
 
-
-.fade-in-12{
-    animation: fadeIn ease 3.5s;
+.fade-in-12 {
+	animation: fadeIn ease 3.5s;
 	-webkit-animation: fadeIn ease 3.5s;
 	-moz-animation: fadeIn ease 3.5s;
 	-o-animation: fadeIn ease 3.5s;
 	-ms-animation: fadeIn ease 3.5s;
 }
 
-
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
+	}
+	75% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -60,10 +58,10 @@
 @-moz-keyframes fadeIn {
 	0% {
 		opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
+	}
+	75% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -72,10 +70,10 @@
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
+	}
+	75% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -84,10 +82,10 @@
 @-o-keyframes fadeIn {
 	0% {
 		opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
+	}
+	75% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -96,10 +94,10 @@
 @-ms-keyframes fadeIn {
 	0% {
 		opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
+	}
+	75% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -128,21 +126,19 @@
 
 /*? MISC ------------------------------------------------------------------- */
 .projects {
-    padding: 50px;
+	padding: 50px;
 	font-family: "Open Sans", sans-serif;
 	font-size: 2vw;
 }
 
 .icon {
-    zoom: 3;
+	zoom: 3;
 }
-
-
 
 h1 {
 	font-family: "Open Sans", sans-serif;
-    font-size: 2.8vw;
-    padding:20px;
+	font-size: 2.8vw;
+	padding: 20px;
 }
 
 .sectionheader {
@@ -169,35 +165,34 @@ button:hover {
 	background-color: #fff;
 	border: black;
 	border-radius: 50%;
-    zoom: 2;
-    position:fixed;
+	zoom: 2;
+	position: fixed;
 }
 
 .darkmode {
-    background-color: #333333;
-    color:white;
+	background-color: #333333;
+	color: white;
 }
 
 .badlink {
-    position: absolute;
+	position: absolute;
 }
 
 p {
-    margin-top:20px;
+	margin-top: 20px;
 }
-
 
 /* FADE IN */
 
 .fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
+	opacity: 0;
+	transform: translateY(20vh);
+	visibility: hidden;
+	transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+	will-change: opacity, visibility;
 }
 .fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
+	opacity: 1;
+	transform: none;
+	visibility: visible;
 }
