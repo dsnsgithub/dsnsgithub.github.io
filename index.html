@@ -6,170 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSNS Bio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
     <script src="https://kit.fontawesome.com/8b8f2eda4a.js" crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="DSNS's Bio" />
     <meta property="og:description" content="Check out what I do, and explore some of my projects." />
     <meta property="og:url" content="https://dsnsgithub.github.io" />
-    <meta property="og:image" content="static/images/pfp.png" />
-
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/site.webmanifest">
+    <meta property="og:image" content="../static/images/pfp.png" />
 </head>
 
-
-
 <body>
+    <button id="darkbutton" onclick="darkMode()"><i class="fas fa-moon"></i></button>
     <header>
 
-
-        <div class="row">
-            <div class="column bordersection">
-
-
-                <h1 class="thinline">Welcome to my bio!</h1>
-
-                <h1 class="thinline">I code
-
-                    <div class="grid-container">
-                        <div class="grid-item">
-                            <img src="static/images/icons8-html-5-48.png" alt="html">
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="static/images/icons8-css3-48.png" alt="css">
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="static/images/icons8-javascript-48.png" alt="js">
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="static/images/icons8-nodejs-48.png" alt="nodejs">
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="static/images/icons8-python-48.png" alt="python">
-                        </div>
-
-                        <div class="grid-item">
-                            <img src="static/images/icons8-c++-48.png" alt="c++">
-                        </div>
-
-                    </div>
-
-
-                </h1>
-
-
-                <h1>Check out the projects I am working on</h1>
-
-
-                <div class="grid-container">
-
-                    <a href="https://dsnsgithub.github.io/birthdays">
-                        <button class="grid-item project" style="background-color:rgb(219, 183, 90);">
-                            Birthday Countdown
-                        </button>
-                    </a>
-
-
-                    <a href="https://dsnsgithub.github.io/gamingpc">
-                        <button class="grid-item project" style="background-color:darkgoldenrod;">
-                            Gaming PC Countdown
-                        </button>
-                    </a>
-
-                    <a href="https://dsnsgithub.github.io/christmas">
-                        <button class="grid-item project" style="background-color: rgb(211, 107, 107);">
-                            Christmas Countdown
-                        </button>
-                    </a>
-
-                    <a href="https://dsnsgithub.github.io/flex">
-                        <button class="grid-item project" style="background-color: rgb(144, 207, 128);">
-                            Hypixel Level Comparison
-                        </button>
-                    </a>
-
-                    <a href="https://dsnsgithub.github.io/blog/how-to-create-a-minecraft-server.html">
-                        <button class="grid-item project" style="background-color: rgb(151, 201, 65);">
-                            How to create a Minecraft Server
-                        </button>
-                    </a>
-
-                    <a href="https://dsnsgithub.github.io/ppi">
-                        <button class="grid-item project" style="background-color: rgb(114, 194, 78);">
-                            PPI Calculator
-                        </button>
-                    </a>
-
-                </div>
+        <center>
+            <div class="typing">
+                Welcome to my Bio!
             </div>
 
-            <div class="column">
-
-                <h1 class="thinline">Socials</h1>
-
-
-                <div class="discordtag">
-                    <i style="zoom:1.5;" class="fab fa-discord"></i> DSNS#1087
-                </div>
-
-                <div class="grid-container thinline">
-
-                    <div class="grid-item icon">
-                        <a style="color:black;" href="https://github.com/dsnsgithub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="grid-item icon">
-                        <a style="color: rgb(85,26,139)" href="https://www.twitch.tv/dsnsosu"><i class="fab fa-twitch"></i></a>
-                    </div>
-                    <div class="grid-item icon">
-                        <a style="color:red;" href="https://www.youtube.com/channel/UCvUkvYDaBdqFJA0THLPs0qQ"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <div class="grid-item icon">
-                        <a style="color:#FF4500;" href="https://www.reddit.com/user/Dominic_Mine"><i class="fab fa-reddit"></i></a>
-                    </div>
-                    <div class="grid-item icon">
-                        <a style="color:#1DAFF2;" href="https://twitter.com/DSNSminecraft"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="grid-item icon">
-                        <a style="color:darkblue" href="https://steamcommunity.com/profiles/76561198929623310"><i class="fab fa-steam"></i></a>
-                    </div>
-
-
-                </div>
-                <center>
-                    <blockquote class="twitter-tweet">
-                        <p lang="in" dir="ltr">dsns</p>&mdash; jiebiosu #SmokeBN #AstronicBN (@jiebiosu) <a href="https://twitter.com/jiebiosu/status/1329330329719435264?ref_src=twsrc%5Etfw">November 19, 2020</a>
-                    </blockquote>
-
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </center>
-
-
-
-                <button id="darkbutton" onclick="darkMode()"><i class="fas fa-moon"></i></button>
-            </div>
-
-
-        </div>
-
-
+            <h1 class="fade-in">Check out what I can do!</h1>
+        </center>
 
     </header>
 
+    <main>
+        <section>
+            <div class="row fade-in">
+                <div class="column bordersection">
+                    <h1>I code...</h1>
+
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-html-5-48.png" alt="html">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-css3-48.png" alt="css">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-javascript-48.png" alt="js">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-nodejs-48.png" alt="nodejs">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-python-48.png" alt="python">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="../static/images/icons8-c++-48.png" alt="c++">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="column">
+                    <h1>My Socials</h1>
+                    <div class="grid-container thinline">
+
+                        <div class="grid-item icon">
+                            <a style="color:black;" href="https://github.com/dsnsgithub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="grid-item icon">
+                            <a style="color: rgb(85,26,139)" href="https://www.twitch.tv/dsnsosu"><i class="fab fa-twitch"></i></a>
+                        </div>
+                        <div class="grid-item icon">
+                            <a style="color:red;" href="https://www.youtube.com/channel/UCvUkvYDaBdqFJA0THLPs0qQ"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="grid-item icon">
+                            <a style="color:#FF4500;" href="https://www.reddit.com/user/Dominic_Mine"><i class="fab fa-reddit"></i></a>
+                        </div>
+                        <div class="grid-item icon">
+                            <a style="color:#1DAFF2;" href="https://twitter.com/DSNSminecraft"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="grid-item icon">
+                            <a style="color:darkblue" href="https://steamcommunity.com/profiles/76561198929623310"><i class="fab fa-steam"></i></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <h1 class="sectionheader">My Projects</h1>
+
+        <section class="projects" style="background: rgb(228,121,226);background: linear-gradient(202deg, rgba(228,121,226,1) 0%, rgba(250,96,96,1) 50%, rgba(192,0,255,1) 100%);">
+            <h2>Hypixel Level Comparison</h2>
+            <p>Compare my Hypixel level to others.</p>
+
+
+            <a href="https://dsnsgithub.github.io/flex">
+                <button class="projectbutton">
+                    Hypixel Level Comparison
+                </button>
+            </a>
+        </section>
+
+        <section class="projects" style="background: rgb(228,151,121); background: linear-gradient(202deg, rgba(228,151,121,1) 0%, rgba(241,185,163,1) 50%, rgba(255,247,0,1) 100%);">
+            <h2>Birthday Countdown</h2>
+            <p>Countdown of People's Birthdays</p>
+
+
+            <a href="https://dsnsgithub.github.io/birthdays">
+                <button class="projectbutton">
+                    Birthday Countdown
+                </button>
+            </a>
+
+
+        </section>
+
+
+        <section class="projects" style="background: rgb(121,228,221);background: linear-gradient(202deg, rgba(121,228,221,1) 0%, rgba(163,241,203,1) 50%, rgba(5,255,0,1) 100%);">
+            <h2>Gaming PC Countdown</h2>
+            <p>Countdown until I get my Gaming PC</p>
+
+
+            <a href="https://dsnsgithub.github.io/gamingpc">
+                <button class="projectbutton">
+                    Gaming PC Countdown
+                </button>
+            </a>
+
+        </section>
+
+        <section class="projects" style="background: rgb(219,121,228);background: linear-gradient(202deg, rgba(219,121,228,1) 0%, rgba(96,104,250,1) 50%, rgba(0,254,255,1) 100%);">
+            <h2>Christmas Countdown</h2>
+            <p>Countdown until Christmas</p>
+
+
+            <a href="https://dsnsgithub.github.io/christmas">
+                <button class="projectbutton">
+                    Christmas Countdown
+                </button>
+            </a>
+
+        </section>
+
+        <section class="projects" style="background: rgb(228,121,121);background: linear-gradient(202deg, rgba(228,121,121,1) 0%, rgba(250,204,96,1) 51%, rgba(192,0,255,1) 100%);">
+            <h2>How to create a Minecraft Server</h2>
+            <p>A step by step guide on how to create a Minecraft server.</p>
+
+
+            <a href="https://dsnsgithub.github.io/blog/how-to-create-a-minecraft-server.html">
+                <button class="projectbutton">
+                How to create a Minecraft Server
+                </button>
+            </a>
+
+        </section>
+    </main>
 
 </body>
 
