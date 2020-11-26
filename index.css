@@ -1,42 +1,112 @@
 * {
-    font-family: "Open Sans", sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
-.darkmode {
-    background-color: #333333;
-    color:white;
+/*? ANIMATIONS ---------------------------------------------------------------*/
+
+.typing {
+	width: 18ch;
+	animation: typing 1.75s steps(18), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 7vw;
 }
 
-#darkbutton {
-    float:right;
-    height: 25px;
-    width: 25px;
-    background-color: #FFF;
-    border: black;
-    border-radius: 50%;
-    zoom:2;
-
+@keyframes typing {
+	from {
+		width: 0;
+	}
 }
 
-#darkbutton:focus {
-    outline:0;
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
-
-h1 {
-    font-size: 2.5vw;
+.fade-in {
+	animation: fadeIn ease 2.5s;
+	-webkit-animation: fadeIn ease 2.5s;
+	-moz-animation: fadeIn ease 2.5s;
+	-o-animation: fadeIn ease 2.5s;
+	-ms-animation: fadeIn ease 2.5s;
 }
 
+.fade-in-12 {
+	animation: fadeIn ease 3.5s;
+	-webkit-animation: fadeIn ease 3.5s;
+	-moz-animation: fadeIn ease 3.5s;
+	-o-animation: fadeIn ease 3.5s;
+	-ms-animation: fadeIn ease 3.5s;
+}
 
-.thinline {
-    border-bottom: 3px solid #666;
-    padding-bottom:30px;
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /*? FLEXBOX STYLES ---------------------------------------------------------------*/
 
 .row {
-    display: flex;
+	display: flex;
 }
 
 .column {
@@ -46,7 +116,7 @@ h1 {
 }
 
 .bordersection {
-	border-right: 1px solid #AAA;
+	border-right: 1px solid #aaa;
 }
 
 .grid-container {
@@ -54,33 +124,75 @@ h1 {
 	grid-template-columns: auto auto auto;
 }
 
-.icon{
-    zoom:3;
+/*? MISC ------------------------------------------------------------------- */
+.projects {
+	padding: 50px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2vw;
 }
 
-.discordtag {
-    font-weight: bold;
-    padding:30px;
-    background-color:#5b606b;
-    border-radius: 4px;
-    font-size: 2vw;
-    margin:40px;
-    box-shadow: 5px 15px 5px rgb(63, 62, 62);
-    color:white;
+.icon {
+	zoom: 3;
 }
 
-.project {
-    border-radius: 25px;
-    padding: 15px;
-    margin:10px;
-    font-size: 1.5vw;
-    border: none;
+h1 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 2.8vw;
+	padding: 20px;
+}
+
+.sectionheader {
+	font-size: 3vw;
+	text-align: center;
+}
+
+.projectbutton {
+	padding: 1.5vw;
+	background-color: lightblue;
+	transform: translateX(65vw) translateY(-7vw);
+	border-radius: 10px;
+	border: solid;
+	font-size: 1.6vw;
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.twitter-tweet {
-    margin-top:40px !important;
+#darkbutton {
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border: black;
+	border-radius: 50%;
+	zoom: 2;
+	position: fixed;
+}
+
+.darkmode {
+	background-color: #333333;
+	color: white;
+}
+
+.badlink {
+	position: absolute;
+}
+
+p {
+	margin-top: 20px;
+}
+
+/* FADE IN */
+
+.fade-in-section {
+	opacity: 0;
+	transform: translateY(20vh);
+	visibility: hidden;
+	transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+	will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+	opacity: 1;
+	transform: none;
+	visibility: visible;
 }

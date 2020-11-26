@@ -1,20 +1,14 @@
 function darkMode() {
+	var element = document.getElementById("html");
+	var button = document.getElementById("darkbutton");
+	var elementclass = element.className;
 
-    var element = document.getElementById("html");
-    var button = document.getElementById("darkbutton")
-    var elementclass = element.className;
-
-    //var twitterEmbed = document.getElementsByName("blockquote");
-
-
-    if (elementclass == "darkmode") {
+	if (elementclass == "darkmode") {
 		element.classList.remove("darkmode");
-        button.innerHTML = '<i class="fas fa-moon"></i>';
-        //twitterEmbed.setAttribute("data-theme", "light");
+		button.innerHTML = '<i class="fas fa-moon"></i>';
 	} else {
 		element.classList.add("darkmode");
-        button.innerHTML = '<i class="fas fa-sun"></i>';
-       // twitterEmbed.setAttribute("data-theme", "dark")
+		button.innerHTML = '<i class="fas fa-sun"></i>';
 	}
-	
 }
+
