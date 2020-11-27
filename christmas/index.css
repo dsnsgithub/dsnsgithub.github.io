@@ -3,9 +3,9 @@
 }
 
 #demo {
-	margin-left: auto;
-	margin-right: auto;
-	width: 8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 9vw;
 	font-weight: bold;
 }

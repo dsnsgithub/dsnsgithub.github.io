@@ -9,9 +9,9 @@
         }
 
         #demo {
-            margin-left: auto;
-            margin-right: auto;
-            width: 8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 9vw;
             font-weight: bold;
         }
@@ -45,7 +45,7 @@
 
             // Display the result in the element with id="demo"
             document.getElementById("demo").innerHTML =
-                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -88,19 +88,19 @@
                 width: 50px;
                 border: solid;
             }
-    
+
             #navlink {
                 text-decoration: none;
                 font-size: 2vw;
                 color: black;
             }
         </style>
-    
-    
+
+
         <button id="backNav">
             <a id="navlink" href="https://dsnsgithub.github.io"><i class="fas fa-arrow-left"></i></a>
         </button>
-    
+
     </nav>
 
     <p id="demo"></p>
