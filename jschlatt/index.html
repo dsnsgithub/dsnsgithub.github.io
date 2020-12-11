@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRMS Student Index</title>
-
-    <link rel="stylesheet" href="index.css">
+    <title>Jschlatt Yootooz Countdown</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Student Index" />
-    <meta property="og:description" content="Use the Student Index Here." />
-    <meta property="og:url" content="https://dsnsgithub.github.io/studentindex" />
+    <meta property="og:title" content="Jschlatt Yootooz Countdown" />
+    <meta property="og:description" content="Displays days, hours, minutes, and seconds until Jschlatt Yootooz releases" />
+    <meta property="og:url" content="https://dsnsgithub.github.io/jschlatt" />
     <meta property="og:image" content="../static/images/pfp.png" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
@@ -21,7 +20,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
     <link rel="manifest" href="../static/favicon/site.webmanifest">
 
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
 </head>
+
 <body>
     <nav>
         <script src="https://kit.fontawesome.com/8b8f2eda4a.js" crossorigin="anonymous"></script>
@@ -32,36 +35,23 @@
                 width: 50px;
                 border: solid;
             }
-    
+
             #navlink {
                 text-decoration: none;
                 font-size: 30px;
                 color: black;
             }
         </style>
-    
-    
+
+
         <button id="backNav">
             <a id="navlink" href="https://dsnsgithub.github.io"><i class="fas fa-arrow-left"></i></a>
         </button>
-    
+
     </nav>
 
-    
-    <center>
-    <h1>GRMS Student Index</h1>
-    <form action="https://grms.schoolloop.com/loopmail/users?registered=true" method="GET">
-        <input type="text" name="q" placeholder="Student Name"> 
-        <input type="submit">
-    </form>
-
-    <div class="explain">
-    <h2>What is the Student Index?</h2>
-    
-    <p>The student index is a database that Schoolloop uses to keep track of all the students in their system.</p>
-    <p>There is a way to use the student index yourself. <b>You will have to be logged in to Schoolloop to use the index.</b></p>
-    </div>
-
-    </center>
+    <p id="demo"></p>
+    <h1>Until Jschlatt Youtooz Releases</h1>
 </body>
+
 </html>
