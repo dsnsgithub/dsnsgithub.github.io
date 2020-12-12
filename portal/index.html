@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nether Portal Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nether Portal Calculator" />
+    <meta property="og:description" content="Calculates Overworld to Nether Coordinates in Minecraft." />
+    <meta property="og:url" content="https://dsnsgithub.github.io/portal" />
+    <meta property="og:image" content="../static/images/pfp.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
+</head>
+
+<body>
+    <nav>
+        <script src="https://kit.fontawesome.com/8b8f2eda4a.js" crossorigin="anonymous"></script>
+        <style>
+            #backNav {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                border: solid;
+            }
+    
+            #navlink {
+                text-decoration: none;
+                font-size: 30px;
+                color: black;
+            }
+        </style>
+    
+    
+        <button id="backNav">
+            <a id="navlink" href="https://dsnsgithub.github.io"><i class="fas fa-arrow-left"></i></a>
+        </button>
+    
+    </nav>
+
+    <main>
+        <h1>Overworld to Nether Coordinate Conversion</h1>
+
+        <h2>Input</h2>
+
+        <p>X:</p>
+        <input id="inputX" type="text" placeholder="X" onkeyup="calculateCoords()">
+        <p>Y:</p>
+        <input id="inputY" type="text" placeholder="Y" onkeyup="calculateCoords()">
+
+
+        <h2>Output</h2>
+
+        <p>X:</p>
+        <p id="outputX"></p>
+        <p>Y:</p>
+        <p id="outputY"></p>
+    </main>
+
+</body>
+
+</html>
