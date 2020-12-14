@@ -15,3 +15,17 @@ h1 {
     font-size: 4vw;
 }
 
+.grid-container {
+	display: flex;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    border-right: 1px solid #aaa;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
