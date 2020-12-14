@@ -1,4 +1,4 @@
-var video = document.querySelector("#videoElement");
+var video = document.getElementById("videoElement");
 
 if (navigator.mediaDevices.getUserMedia) {
 	navigator.mediaDevices
@@ -6,7 +6,4 @@ if (navigator.mediaDevices.getUserMedia) {
 		.then(function (stream) {
 			video.srcObject = stream;
 		})
-		.catch(function (err0r) {
-			console.log("Something went wrong!");
-		});
 }
