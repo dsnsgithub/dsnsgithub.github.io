@@ -141,6 +141,12 @@ h1 {
 	padding: 20px;
 }
 
+h3 {
+    font-family: "Open Sans", sans-serif;
+	font-size: 1.5vw;
+	padding-bottom: 10px;
+}
+
 .sectionheader {
 	font-size: 3vw;
 	text-align: center;
