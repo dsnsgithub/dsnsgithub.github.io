@@ -7,7 +7,7 @@
 
 .typing {
 	width: 18ch;
-	animation: typing 1.75s steps(18), blink 0.5s step-end infinite alternate;
+	animation: typing 1.5s steps(18), blink 0.5s step-end infinite alternate;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 3px solid;
@@ -28,19 +28,19 @@
 }
 
 .fade-in {
-	animation: fadeIn ease 2.5s;
-	-webkit-animation: fadeIn ease 2.5s;
-	-moz-animation: fadeIn ease 2.5s;
-	-o-animation: fadeIn ease 2.5s;
-	-ms-animation: fadeIn ease 2.5s;
+	animation: fadeIn ease 0.75s;
+	-webkit-animation: fadeIn ease 0.75s;
+	-moz-animation: fadeIn ease 0.75s;
+	-o-animation: fadeIn ease 0.75s;
+	-ms-animation: fadeIn ease 0.75s;
 }
 
 .fade-in-12 {
-	animation: fadeIn ease 3.5s;
-	-webkit-animation: fadeIn ease 3.5s;
-	-moz-animation: fadeIn ease 3.5s;
-	-o-animation: fadeIn ease 3.5s;
-	-ms-animation: fadeIn ease 3.5s;
+	animation: fadeIn ease 1.3s;
+	-webkit-animation: fadeIn ease 1.3s;
+	-moz-animation: fadeIn ease 1.3s;
+	-o-animation: fadeIn ease 1.3s;
+	-ms-animation: fadeIn ease 1.3s;
 }
 
 @keyframes fadeIn {
