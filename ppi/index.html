@@ -36,61 +36,64 @@
                 width: 50px;
                 border: solid;
             }
-    
+
             #navlink {
                 text-decoration: none;
                 font-size: 30px;
                 color: black;
             }
         </style>
-    
-    
+
+
         <button id="backNav">
             <a id="navlink" href="https://dsnsgithub.github.io"><i class="fas fa-arrow-left"></i></a>
         </button>
-    
+
     </nav>
 
-
-    <center>
-
-
-        <label for="height">Height:</label> <br>
-        <input id="height" name="height" type="number">
-
-        <br>
-
-        <label for="width">Width:</label> <br>
-        <input id="width" name="width" type="number">
-
-        <br>
-
-        <label for="screenSize">Screen Size:</label> <br>
-        <input id="screenSize" name="screenSize" type="number">
-
-        <br>
-
-        <button type="button" onclick="calculatePPI()">Calculate</button>
-
-        <br>
-        <br>
-
-        <h1>
-            PPI:
-            <p id="ppi"></p>
-        </h1>
+    <main>
+        <center>
 
 
+            <label for="height">Height:</label> <br>
+            <input id="height" name="height" type="number">
+
+            <br>
+
+            <label for="width">Width:</label> <br>
+            <input id="width" name="width" type="number">
+
+            <br>
+
+            <label for="screenSize">Screen Size:</label> <br>
+            <input id="screenSize" name="screenSize" type="number">
+
+            <br>
+
+            <button type="button" onclick="calculatePPI()">Calculate</button>
+
+            <br>
+            <br>
+
+            <h1>
+                PPI:
+                <p id="ppi"></p>
+            </h1>
 
 
-        <h2>What is PPI?</h2>
 
-        <div class="explain">
-            <p>PPI, also known as pixels per inch, is a calculation to determine how many pixels per one inch on your monitor there are.</p>
-            <p>The higher the PPI, the sharper the image quality.</p>
-        </div>
 
-    </center>
+            <h2>What is PPI?</h2>
+
+            <div class="explain">
+                <p>PPI, also known as pixels per inch, is a calculation to determine how many pixels per one inch on your monitor there are.</p>
+                <p>The higher the PPI, the sharper the image quality.</p>
+            </div>
+
+        </center>
+    </main>
+
+
 </body>
 
 </html>
