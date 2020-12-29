@@ -17,6 +17,6 @@ var x = setInterval(function () {
 	// If the count down is finished, write some text
 	if (distance < 0) {
 		clearInterval(x);
-		document.getElementById("demo").innerHTML = "Merry Christmas 2020!";
+		document.getElementById("demo").innerHTML = "Merry Christmas 2021!";
 	}
 }, 1000);
