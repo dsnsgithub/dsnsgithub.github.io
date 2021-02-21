@@ -1,0 +1,14 @@
+#status {
+    font-size: 60px; 
+    font-family: monospace;
+}
+
+#DSNSgame, #AmKalegame, #jiebigame {
+    text-align: center;
+    font-size: 40px; 
+    font-family: monospace;
+}
+
+hr {
+    margin: 20px;
+}
